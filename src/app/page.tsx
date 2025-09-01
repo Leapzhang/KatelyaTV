@@ -23,6 +23,35 @@ import ScrollableRow from '@/components/ScrollableRow';
 import { useSite } from '@/components/SiteProvider';
 import VideoCard from '@/components/VideoCard';
 
+// 主内容区大型 KatelyaTV Logo 组件
+const MainKatelyaLogo = () => {
+  return (
+    <div className='main-logo-container'>
+      {/* 背景光效 */}
+      <div className='logo-background-glow'></div>
+
+      {/* 主 Logo */}
+      <div className='main-katelya-logo'>LeapTV</div>
+
+      {/* 副标题 */}
+      <div className='mt-3 text-center'>
+        <div className='main-logo-subtitle'>极致影视体验，尽在指尖</div>
+      </div>
+
+      {/* 装饰性粒子效果 */}
+      <div className='logo-particles'>
+        <div className='particle particle-1'></div>
+        <div className='particle particle-2'></div>
+        <div className='particle particle-3'></div>
+        <div className='particle particle-4'></div>
+        <div className='particle particle-5'></div>
+        <div className='particle particle-6'></div>
+      </div>
+    </div>
+  );
+};
+
+
 function HomeClient() {
   const [activeTab, setActiveTab] = useState<'home' | 'favorites'>('home');
   const [hotMovies, setHotMovies] = useState<DoubanItem[]>([]);
