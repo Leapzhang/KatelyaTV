@@ -51,6 +51,27 @@ const MainKatelyaLogo = () => {
   );
 };
 
+// KatelyaTV 底部 Logo 组件
+const BottomKatelyaLogo = () => {
+  return (
+    <div className='bottom-logo-container'>
+      {/* 浮动几何形状装饰 */}
+      <div className='floating-shapes'>
+        <div className='shape'></div>
+        <div className='shape'></div>
+        <div className='shape'></div>
+        <div className='shape'></div>
+      </div>
+
+      <div className='text-center'>
+        <div className='bottom-logo'>LeapTV</div>
+        <div className='mt-2 text-sm text-gray-500 dark:text-gray-400 opacity-75'>
+          Powered by LeapTV Core
+        </div>
+      </div>
+    </div>
+  );
+};
 
 function HomeClient() {
   const [activeTab, setActiveTab] = useState<'home' | 'favorites'>('home');
